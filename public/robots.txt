@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ngs-dev-studio.github.io/sitemap.xml

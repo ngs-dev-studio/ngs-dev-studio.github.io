@@ -1,0 +1,5 @@
+.impeccable/
+.claude/
+node_modules/
+dist/
+dist-ssr/
