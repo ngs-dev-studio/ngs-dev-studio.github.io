@@ -431,7 +431,7 @@ html:not(.js) .nav { order: 3; flex-basis: 100%; }
 }
 .product::before { content: ""; position: absolute; z-index: 2; left: 0; right: 0; top: 0; height: 11px; background: radial-gradient(circle at 11px 0, var(--gold) 5px, transparent 5.6px) 0 0 / 22px 11px repeat-x; }
 .product img { width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; background: var(--sand); }
-.product-body { display: grid; gap: 8px; align-content: start; padding: 20px 20px 22px; }
+.product-body { display: grid; grid-template-rows: auto 1fr auto auto; gap: 8px; padding: 20px 20px 22px; }
 .product-body h3 { font-size: 1.45rem; }
 .product-body p { color: var(--soft); font-size: 1rem; }
 .product-body .product-price { margin-top: 4px; font: 400 2.1rem/1 var(--f-display); color: var(--brown); }
