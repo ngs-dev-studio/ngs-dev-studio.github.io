@@ -17,6 +17,7 @@ export default function Hero() {
         </div>
         <div className="hero-visual">
           <span className="giant-one" aria-hidden="true">1</span>
+          <div className="phone-slot">
           <a className="phone phone-hero" href="#demos" aria-label="Ver las demos de webs de boda">
             <span className="phone-notch" aria-hidden="true" />
             <img
@@ -28,6 +29,7 @@ export default function Hero() {
               fetchpriority="high"
             />
           </a>
+          </div>
           <p className="hero-cap">Demo real: <strong>Elegante</strong></p>
         </div>
       </div>
