@@ -1,3 +1,4 @@
+import Shop from './Shop.jsx';
 import { IG, FB, TT, FEATURES, VS, STEPS, PRICE_LIST, FAQ, PALETTES, FONTS } from '../data.js';
 
 const Features = () => (
@@ -170,6 +171,7 @@ export default function Sections() {
       <Como />
       <Precio />
       <Planners />
+      <Shop />
       <Faq />
       <Contacto />
     </>

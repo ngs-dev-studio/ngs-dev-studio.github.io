@@ -8,6 +8,7 @@ export const NAV = [
   ['#incluye', 'Qué incluye'],
   ['#como', 'Cómo trabajo'],
   ['#precio', 'Precio'],
+  ['#tienda', 'Tienda'],
   ['#planners', 'Para wedding planners'],
   ['#contacto', 'Contacto'],
 ];

@@ -14,6 +14,10 @@ export default function Hero() {
           <p className="price-line">
             <span className="was"><span className="sr">Precio habitual </span>100 €</span> <strong>50 €</strong> <span className="tag">Oferta de lanzamiento</span>
           </p>
+          <a className="hero-shop" href="#tienda">
+            <span className="hero-shop-hole" aria-hidden="true" />
+            <span className="hero-shop-text"><strong>Tienda</strong><span>Regalos para invitados</span></span>
+          </a>
         </div>
         <div className="hero-visual">
           <span className="giant-one" aria-hidden="true">1</span>

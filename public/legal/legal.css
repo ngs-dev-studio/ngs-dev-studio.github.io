@@ -1,0 +1,21 @@
+/* Estilo de las páginas legales (borrador). Mismo mundo visual que la web: hoja crema, Gloock + Hanken Grotesk. */
+:root { --cream:#F4EBDD; --paper:#FBF6EC; --brown:#3A2E22; --soft:#6B5842; --gold:#B8924A; --gold-ink:#7D5F25; --line:rgba(58,46,34,.22); }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--cream); color: var(--brown); font: 400 1.0625rem/1.65 "Hanken Grotesk", system-ui, Arial, sans-serif; }
+a { color: inherit; text-underline-offset: 4px; }
+:focus-visible { outline: 3px solid var(--brown); outline-offset: 3px; }
+header { border-bottom: 1px solid var(--line); }
+.bar, main { width: 100%; max-width: 760px; margin: 0 auto; padding-inline: 20px; }
+.bar { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 64px; }
+.brand { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; font: 400 1.2rem/1 "Gloock", Georgia, serif; }
+.brand img { width: 40px; height: auto; }
+.back { font-weight: 600; text-decoration: none; padding: 10px 0; border-bottom: 2px solid var(--gold); }
+.draft { margin: 28px 0 8px; padding: 14px 16px; border: 2px dashed var(--brown); border-radius: 4px; background: var(--paper); font-weight: 600; }
+h1 { font: 400 clamp(2.2rem, 8vw, 3.4rem)/1.05 "Gloock", Georgia, serif; letter-spacing: -.015em; margin: 28px 0 10px; text-wrap: balance; }
+h2 { font: 400 1.5rem/1.2 "Gloock", Georgia, serif; margin: 34px 0 8px; }
+p, li { max-width: 68ch; }
+ul { padding-left: 1.2rem; }
+.todo { background: #EADCC6; padding: 1px 6px; border-radius: 3px; font-weight: 600; }
+nav.legal-nav { display: flex; flex-wrap: wrap; gap: 4px 20px; margin: 40px 0 60px; padding-top: 18px; border-top: 1px solid var(--line); font-weight: 600; font-size: .95rem; }
+nav.legal-nav a { padding: 8px 0; }
+@media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }

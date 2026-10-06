@@ -41,3 +41,18 @@ Las rutas son relativas (`base: './'`): funciona en la raíz o en un subdirector
 - Las demos se muestran con capturas reales (`public/assets/demos/`) y la demo viva se carga solo al pulsar «Probar en vivo». Si cambias una demo, regenera su captura.
 - En Windows, no dejes un servidor sirviendo `dist/` mientras ejecutas `npm run build` (bloquea los archivos).
 - Pendientes y datos por completar: ver `TODO.md`.
+
+## Tienda (rama `feature/tienda-stripe`, sin publicar)
+
+Sección `#tienda` de la página (con enlace «Tienda» en la navegación). Cobro con **Stripe Payment Links**: cada botón «Comprar» abre un enlace de pago externo; no hay servidor ni claves.
+
+**Añadir, cambiar o quitar un producto:** edita solo `src/data/productos.js`. Cada producto es un objeto con `id`, `nombre`, `descripcion`, `precio` (número en euros, o `null` = «Precio por definir»), `imagen`, `alt` y `paymentLink`. Añade la imagen en `public/assets/tienda/`.
+
+**Sustituir los enlaces de Stripe:** en Stripe crea un Payment Link por producto y pega su URL (`https://buy.stripe.com/...`) en `paymentLink`. Mientras el enlace esté vacío o contenga `REEMPLAZAR`, el botón sale desactivado con el texto «Próximamente»; cuando haya enlace real pasa solo a «Comprar». Si todos los enlaces son reales, el aviso «Vista previa» desaparece solo.
+
+**Textos legales:** `public/legal/` contiene plantillas de *Condiciones de venta*, *Devoluciones y envíos* y *Privacidad*. Son **borradores** con huecos marcados (`[A DEFINIR]`) y avisan en pantalla de que no valen hasta su revisión legal. Los enlaces a ellos están bajo el catálogo.
+
+**Decisiones simples (cámbialas si quieres):**
+- Es una sección de la página única, no una página aparte; los textos legales son páginas HTML estáticas sencillas (sin router).
+- Los 4 productos, sus textos, precios e imágenes (ilustraciones SVG) son de ejemplo.
+- Para no publicarla, no hagas merge de esta rama a `main` (GitHub Pages publica desde `main`).
